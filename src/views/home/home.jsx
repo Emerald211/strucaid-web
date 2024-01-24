@@ -21,7 +21,7 @@ const Home = () => {
 					</h1>
 					<p className=' text-sm text-white'>
 						Let us provide you with the best building materials at affordable
-						prices.
+						Prices.
 					</p>
 
 					<button className=' flex items-center gap-2 mt-4 w-[130px] bg-[#021853] text-white px-5 py-2'>
