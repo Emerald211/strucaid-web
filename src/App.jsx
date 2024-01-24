@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Login from './views/login/login';
 import Signup from './views/signup/signup';
-import PersonalDetails from '/src/components/personal-details/personaldetailsForm';
+import PersonalDetails from './src/components/personal-details/personaldetailsForm';
 import EmailVerification from '/src/components/email-verification/emailVerification';
 import CreatePassWord from './components/create-password/createpassword';
 import Home from './views/home/home';
