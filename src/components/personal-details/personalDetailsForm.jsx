@@ -1,8 +1,8 @@
 import { useAtom } from 'jotai';
 import { useForm } from 'react-hook-form';
-import { signUpAuth } from 'src/states/authentication/auth';
+import { signUpAuth } from '/src/states/authentication/auth';
 
-import { userAtom } from 'src/states/user/user';
+import { userAtom } from '/src/states/user/user';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';

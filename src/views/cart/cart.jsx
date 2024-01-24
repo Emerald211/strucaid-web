@@ -1,7 +1,7 @@
-import cartimg from 'src/assets/bag.png';
-import Footer from 'src/components/footer/footer';
-import SpecialDeal from 'src/components/special-deals/specialdeal';
-import Waitlist from 'src/components/waitlist/waitlist';
+import cartimg from '/src/assets/bag.png';
+import Footer from '/src/components/footer/footer';
+import SpecialDeal from '/src/components/special-deals/specialdeal';
+import Waitlist from '/src/components/waitlist/waitlist';
 
 const Cart = () => {
 	return (

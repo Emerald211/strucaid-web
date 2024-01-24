@@ -1,4 +1,4 @@
-import profile from 'src/assets/Ellipse 7.png';
+import profile from '/src/assets/Ellipse 7.png';
 import { FaStar } from 'react-icons/fa';
 
 const Review = () => {

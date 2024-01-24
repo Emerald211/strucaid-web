@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify';
-import { userAtom } from 'src/states/user/user';
-import { signUpAuth } from 'src/states/authentication/auth';
+import { userAtom } from '/src/states/user/user';
+import { signUpAuth } from '/src/states/authentication/auth';
 import { useAtom } from 'jotai';
 
 const CreatePassWord = () => {

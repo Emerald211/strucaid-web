@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import AuthNavbar from "src/components/auth-navbar/authNavbar";
+import AuthNavbar from "/src/components/auth-navbar/authNavbar";
 
 
 const Shop = () => {

@@ -2,12 +2,12 @@
 import Navbar from 'src/components/navbar/navbar';
 import { FaArrowRight } from 'react-icons/fa';
 
-import ProductCard from 'src/components/product-card/productCard';
-import SpecialDeal from 'src/components/special-deals/specialdeal';
-import img1 from 'src/assets/Frame 6134.png';
-import Review from 'src/components/review-card/review';
-import Footer from 'src/components/footer/footer';
-import Waitlist from 'src/components/waitlist/waitlist';
+import ProductCard from '/src/components/product-card/productCard';
+import SpecialDeal from '/src/components/special-deals/specialdeal';
+import img1 from '/src/assets/Frame 6134.png';
+import Review from '/src/components/review-card/review';
+import Footer from '/src/components/footer/footer';
+import Waitlist from '/src/components/waitlist/waitlist';
 
 const Home = () => {
 	return (

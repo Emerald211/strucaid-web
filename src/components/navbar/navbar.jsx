@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from 'src/assets/png 1.png'
+import logo from '/src/assets/png 1.png'
 import { useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
 import {  BsCart } from "react-icons/bs";

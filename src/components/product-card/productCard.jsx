@@ -1,4 +1,4 @@
-import pInmg from 'src/assets/Rectangle 4055.png';
+import pInmg from '/src/assets/Rectangle 4055.png';
 
 const ProductCard = () => {
 	return (

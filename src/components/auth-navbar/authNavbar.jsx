@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from 'src/assets/png 1.png';
+import logo from '/src/assets/png 1.png';
 import { CiSearch } from "react-icons/ci";
 const AuthNavbar = () => {
 	return (

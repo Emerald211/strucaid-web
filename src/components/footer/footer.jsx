@@ -6,7 +6,7 @@ import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import { FaPhoneAlt } from "react-icons/fa";
-import logo from 'src/assets/png 1.png'
+import logo from '/src/assets/png 1.png'
 
 const Footer = () => {
 	return (

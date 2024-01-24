@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { useAtom } from 'jotai';
-import { userAtom } from 'src/states/user/user';
+import { userAtom } from '/src/states/user/user';
 
 const Login = () => {
 	const { register, handleSubmit } = useForm();
