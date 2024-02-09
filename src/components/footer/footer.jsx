@@ -76,17 +76,7 @@ const Footer = () => {
 							/>
 						</ul>
 
-						<div className=' mt-10  flex flex-col gap-5'>
-							<div className=' flex gap-3 items-center'>
-								<MdOutlineEmail />
-								<h6>strucaid@gmail.com</h6>
-							</div>
-
-							<div className=' flex gap-3 items-center'>
-								<FaPhoneAlt />
-								<h6>+234 8164 400 723</h6>
-							</div>
-						</div>
+					
 					</div>
 				</div>
 
