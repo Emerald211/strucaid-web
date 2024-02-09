@@ -8,7 +8,9 @@ const Waitlist = () => {
 		<>
 			{subscribe && (
 				<div className='fixed top-5 left-5 z-50 flex justify-center items-center flex-col gap-5 font-serrat bg-white shadow-xl w-[90vw] h-[50vh]'>
-					<img src={logo} alt='' />
+					<h1 onClick={() => setSubscribe(false)} className=' absolute top-2 right-5'>X</h1>
+                    
+                    <img src={logo} alt='' />
 
 					<h1 className=' text-main'>Join our Comminity today!</h1>
 
