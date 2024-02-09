@@ -2,11 +2,13 @@
 import { Link } from 'react-router-dom';
 import { CiFacebook } from 'react-icons/ci';
 import { TiSocialTwitterCircular } from 'react-icons/ti';
-import { FaYoutube } from 'react-icons/fa';
+import { FaLinkedin, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
-import { FaPhoneAlt } from "react-icons/fa";
-import logo from '/src/assets/png 1.png'
+import { FaPhoneAlt } from 'react-icons/fa';
+import logo from '/src/assets/png 1.png';
+import { CiLocationOn } from 'react-icons/ci';
+import { BsTwitter } from 'react-icons/bs';
 
 const Footer = () => {
 	return (
@@ -16,63 +18,83 @@ const Footer = () => {
 					{/* Company Section */}
 					<div className=' flex flex-col justify-start'>
 						<img className=' w-[100px] h-[100px]' src={logo} alt='' />
-						<div className='  text-sm w-[180px] md:w-[276px] md:h-[128px]}'>
-							<p>
-								The Tower, <br /> Adjacent Daniela Hostel, <br /> Under-G,
-								LAUTECH,Ogbomoso, <br /> Oyo state, Nigeria.
-							</p>
+						<div className=' flex flex-col gap-4 text-sm w-[180px] md:w-[276px] md:h-[128px]}'>
+							<div className=' flex items-center gap-2 text-xs'>
+								<CiLocationOn /> <span>Oyo State, Nigeria.</span>
+							</div>
+							<div className=' flex items-center gap-2 text-xs'>
+								<MdOutlineEmail /> <span>strucaid@gmail.com</span>
+							</div>
+							<div className=' flex items-center gap-2 text-xs'>
+								<FaPhoneAlt /> <span>+234 8164 400 723</span>
+							</div>
 						</div>
 					</div>
 
 					{/* Help Center Section */}
 					<div>
-						<h2 className='mb-6 text-sm font-semibold '>Links</h2>
+						<h2 className='mb-6 text-sm font-semibold '>Company</h2>
 						<ul className=' flex flex-col font-medium'>
-							<Link>Home</Link>
-							<Link>About</Link>
-							<Link>Testimonies</Link>
-							<Link>Sermon</Link>
-							<Link>Giving</Link>
-							<Link>Blog</Link>
-							<Link>CSR</Link>
+							<Link>About Us</Link>
+							<Link>Contact</Link>
+							<Link>Reviews</Link>
 						</ul>
 					</div>
 
 					{/* Legal Section */}
 					<div>
-						<h2 className='mb-6 text-sm font-semibold '>
-							Get in Touch
-						</h2>
+						<h2 className='mb-6 text-sm font-semibold '>Get in Touch</h2>
 						<ul className=' flex gap-3 text-xl font-medium'>
-							<CiFacebook />
-							<TiSocialTwitterCircular />
-							<FaYoutube />
-							<FaInstagram />
+							<FaWhatsapp
+								onClick={() =>
+									window.open(
+										'https://chat.whatsapp.com/Lg27iaP9O0m8miSVF9woQt',
+										'_blank'
+									)
+								}
+							/>
+							<BsTwitter
+								onClick={() =>
+									window.open('https://x.com/ourstrucaid?s=09', '_blank')
+								}
+							/>
+							<FaInstagram
+								onClick={() =>
+									window.open(
+										'https://www.instagram.com/ourstrucaid?igsh=dDY0MnM3cTBmY3hy',
+										'_blank'
+									)
+								}
+							/>
+							<FaLinkedin
+								onClick={() =>
+									window.open(
+										'https://www.linkedin.com/company/ourstrucaid/',
+										'_blank'
+									)
+								}
+							/>
 						</ul>
 
 						<div className=' mt-10  flex flex-col gap-5'>
 							<div className=' flex gap-3 items-center'>
 								<MdOutlineEmail />
-								<h6>info@strucaid.com</h6>
+								<h6>strucaid@gmail.com</h6>
 							</div>
 
 							<div className=' flex gap-3 items-center'>
 								<FaPhoneAlt />
-								<h6>+234 806637282882</h6>
+								<h6>+234 8164 400 723</h6>
 							</div>
 						</div>
 					</div>
-
 				</div>
 
 				{/* Bottom Section */}
 				<div className='px-4 py-2  bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between'>
 					<span className='text-xs text-gray-500 dark:text-gray-300 sm:text-center'>
-				Strucaid © 2023  All Rights
-						Reserved.
+						Strucaid © 2023 All Rights Reserved.
 					</span>
-
-					
 				</div>
 			</div>
 		</footer>

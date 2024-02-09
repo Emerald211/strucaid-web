@@ -31,12 +31,20 @@ const Home = () => {
 			element.scrollIntoView({ behavior: 'smooth' });
 		}
 	};
+
+	const handleClickScroll2 = () => {
+		const element = document.getElementById('section-2');
+		if (element) {
+			// 👇 Will scroll smoothly to the top of the next section
+			element.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 	return (
 		<div>
 			<Navbar />
 
 			<section className='  font-serrat px-5 md:px-24 bg-banner flex flex-col-reverse  md:flex-row items-center justify-center  h-screen w-full bg-cover bg-no-repeat'>
-				<div className=' px-5 py-5   md:w-[600px] md:h-[400px] i flex flex-col justify-center'>
+				<div id='section-2' className='px-5 py-5   md:w-[600px] md:h-[400px] i flex flex-col justify-center'>
 					<h1 className=' font-bold text-3xl text-white font-serrat'>
 						Quality Building Materials at Unbeatable Prices.
 					</h1>
@@ -113,13 +121,17 @@ const Home = () => {
 				</p>
 			</section>
 
-			<section className='flex flex-col mt-12 font-serrat px-5 md:px-24'>
-				<h1 className=' text-main font-bold text-xl'>
+			<section className=' md:px-2'>
+			<h1 className=' text-main font-bold text-xl'>
 					A sneak peek at some products we will offer you
 				</h1>
 				<p>Take a look at our some of our products.</p>
+		</section>
 
-				<div className='  mt-10 grid grid-cols-1 gap-4 md:grid-cols-4'>
+			<section className='flex flex-col  mt-12 font-serrat px-5 md:px-24'>
+				
+
+				<div className='  mt-10 grid grid-cols-1 items-center justify-center gap-4 md:grid-cols-4'>
 					<div>
 						<img className=' rounded-lg' src={pInmg} alt='' />
 
@@ -323,14 +335,14 @@ const Home = () => {
 						excellence. Build with confidence, build with us!
 					</p>
 
-					<button className=' absolute mt-6 md:mt-0 md:bottom-10 text-white bg-main py-2 px-3'>
+					<button onClick={handleClickScroll2} className=' absolute mt-6 md:mt-0 md:bottom-10 text-white bg-main py-2 px-3'>
 						{' '}
 						Learn More{' '}
 					</button>
 				</div>
 			</section>
 
-			<section className=' font-serrat mt-24 flex flex-col px-10'>
+			<section className=' font-serrat mt-24 flex flex-col px-5 md:px-10'>
 				<div className=' flex justify-between'>
 					<div className=' flex flex-col'>
 						<h1 className=' font-bold'>WHAT PEOPLE ARE SAYING ABOUT US</h1>

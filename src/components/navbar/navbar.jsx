@@ -81,7 +81,7 @@ const Navbar = () => {
       )}
       <nav className=' py-4 px-10 font-serrat text-slate-500 flex items-center justify-between'>
           <img src={logo} alt="logo" />
-          <ul className=' nav-items flex gap-8'>
+          {/* <ul className=' nav-items flex gap-8'>
               <li><Link>Home</Link></li>
               <li><Link>About</Link></li>
               <li><Link>Categories</Link></li>
@@ -94,9 +94,9 @@ const Navbar = () => {
               <button className=' ml-8 px-4 py-3 bg-main text-white'> Log in</button>
               <button className=' px-4 py-3 bg-main text-white'> Sign Up</button>
               
-      </ul>
+      </ul> */}
       
-      <CiMenuBurger onClick={() => setNavState(true)} className='nav-menu text-2xl' />
+      {/* <CiMenuBurger onClick={() => setNavState(true)} className='nav-menu text-2xl' /> */}
       </nav>
       
       </>
